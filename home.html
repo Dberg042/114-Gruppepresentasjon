@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Uia-Fadder</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<div class="nav">
+    <h1 style="text-align: center; padding-top: 25px; color: white">UIA-Fadder</h1>
+    <h3 style="position: fixed; top:35px; right:100px; color: white">Ola Nordmann</h3>
+    <div class="action">
+        <div class="profile" onclick="menuToggle();">
+
+            <img src="/source/31.jpg" id="photo2">
+        </div>
+        <div class="menu" onclick="menuToggle2();">
+            <h3>Ola Nordmann <br> <span>Fadder</span></h3>
+            <ul>
+                <li><img src="/source/user.png"><a class="btn" data-target="#profile">Min Profile</a></li>
+                <li><img src="/source/edit.png"><a class="btn" data-target="#editp" >Rediger Profile</a></li>
+                <li><img src="/source/settings.png"><a class="btn" data-target="#lan">Språk</a></li>
+                <li><img src="/source/envelope.png"><a class="btn" data-target="#notification">Varslinger</a></li>
+                <li><img src="/source/settings.png"><a class="btn" data-target="#chatset">Chat Instilinger</a></li>
+                <li><img src="/source/question.png"><a class="btn" data-target="#help">Help</a></li>
+                <li><img src="/source/question.png"><a class="btn" data-target="#faq">FAQ</a></li>
+                <li><img src="/source/log-out.png"><a class="btn"  href="index.html">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="modal" id="profile">
+    <div class="header">
+        <div class="title">Min profil</div>
+        <button class="btn modal-btn" data-target="#profile">x</button>
+    </div>
+    <div class="body">
+        <div class="headers">
+            <h4>Ola Nordmann </h4>
+            <span>Fadder</span>
+            <br>
+            <h5>Bio</h5></div>
+        <p id="upDateText">Vestibulum at suscipit turpis. Praesent vitae pulvinar ipsum. Phasellus dolor velit, convallis non vulputate at, congue eget felis. Curabitur a lacus volutpat, dignissim lectus ac, semper orci. Mauris ut orci at felis molestie finibus. Sed blandit condimentum arcu vel rutrum.
+        </p>
+    </div>
+</div>
+<div class="modal" id="editp">
+    <div class="header">
+        <div class="title">Rediger Din Profile</div>
+        <button class="btn modal-btn" data-target="#editp">x</button>
+    </div>
+    <div class="body">
+        <div class="profile-pic-div">
+            <img src="/source/31.jpg" id="photo">
+            <input type="file" id="file">
+            <label for="file" id="uploadBtn">Bytte bilde</label>
+        </div>
+        <p id="upDateText2">Vestibulum at suscipit turpis. Praesent vitae pulvinar ipsum. Phasellus dolor velit, convallis non vulputate at, congue eget felis. Curabitur a lacus volutpat, dignissim lectus ac, semper orci. Mauris ut orci at felis molestie finibus. Sed blandit condimentum arcu vel rutrum.
+        </p>
+        <div>
+
+        </div>
+        <form id="myform" name="myform" action="" method="GET">
+            <textarea type="text" name="inputbox" id="formInput" placeholder="Skriv your bio.."></textarea>
+            <button class="fbutton"   id="button">Sent</button>
+        </form>
+    </div>
+</div>
+<div class="modal" id="lan">
+    <div class="header">
+        <div class="title">Språk/language</div>
+        <button class="btn modal-btn" data-target="#lan">x</button>
+    </div>
+    <div class="body">
+        Her velger du mellom Norsk og Engelsk
+    </div>
+</div>
+<div class="modal" id="notification">
+    <div class="header">
+        <div class="title">Varslinger</div>
+        <button class="btn modal-btn" data-target="#notification">x</button>
+    </div>
+    <div class="body">
+        Her kan du se varslinger du vil mota
+    </div>
+</div>
+<div class="modal" id="chatset">
+    <div class="header">
+        <div class="title">Chatte instillinger</div>
+        <button class="btn modal-btn" data-target="#chatset">x</button>
+    </div>
+    <div class="body">
+        Her kan du gjøre ting som å endre på størrelsen på skrift osv
+    </div>
+</div>
+<div class="modal" id="help">
+    <div class="header">
+        <div class="title">Varslinger</div>
+        <button class="btn modal-btn" data-target="#help">x</button>
+    </div>
+    <div class="body">
+        Her kan du sende in fårespørsler om hjelp hvis det er nødvendig
+    </div>
+</div>
+<div class="modal" id="faq">
+    <div class="header">
+        <div class="title">Hjelp</div>
+        <button class="btn modal-btn" data-target="#faq">x</button>
+    </div>
+    <div class="body">
+
+        Her er svar på noen av de spørsmålene vi blir spurt mest
+    </div>
+</div>
+<div class="modal" id="modalp1">
+    <div class="header">
+        <div class="title">David Berg</div>
+        <button class="btn modal-btn" data-target="#modal6">x</button>
+    </div>
+    <div class="body">
+        Her er svar på noen av de spørsmålene vi blir spurt mest
+    </div>
+</div>
+<div class="modal" id="modalp2">
+    <div class="header">
+        <div class="title">Anders Tonheim</div>
+        <button class="btn modal-btn" data-target="#modal6">x</button>
+    </div>
+    <div class="body">
+        Her er svar på noen av de spørsmålene vi blir spurt mest
+    </div>
+</div>
+<div class="modal" id="modalp3">
+    <div class="header">
+        <div class="title">Eidind Fiske</div>
+        <button class="btn modal-btn" data-target="#modal6">x</button>
+    </div>
+    <div class="body">
+        Her er svar på noen av de spørsmålene vi blir spurt mest
+    </div>
+</div>
+<div class="modal" id="modalp4">
+    <div class="header">
+        <div class="title">Stina Westermann</div>
+        <button class="btn modal-btn" data-target="#modal6">x</button>
+    </div>
+    <div class="body">
+        Her er svar på noen av de spørsmålene vi blir spurt mest
+    </div>
+</div>
+<div class="modal" id="modalp5">
+    <div class="header">
+        <div class="title">Tore Haarr</div>
+        <button class="btn modal-btn" data-target="#modal6">x</button>
+    </div>
+    <div class="body">
+        Her er svar på noen av de spørsmålene vi blir spurt mest
+    </div>
+</div>
+<div class="modal" id="modalp6">
+    <div class="header">
+        <div class="title">Rasmus Nilsen</div>
+        <button class="btn modal-btn" data-target="#modal6">x</button>
+    </div>
+    <div class="body">
+        Her er svar på noen av de spørsmålene vi blir spurt mest
+    </div>
+</div>
+<div class="modal" id="modal7">
+    <div class="header">
+        <div class="title">Admin</div>
+        <button class="btn modal-btn" data-target="#modal7">x</button>
+    </div>
+    <div class="body">
+        Her skriver du in id og nøkkel for å få admin tilgang
+    </div>
+</div>
+<!--Arrangement Modals-->
+<div class="modal2" id="modalA">
+    <div class="header">
+        <div class="title">Vors hos Eivind</div>
+        <button class="btn modal-btn" data-target="#modalA">x</button>
+    </div>
+    <div class="body">
+        <div class="grid-info">
+            <div><img src="/source/vors.jpg" alt=""></div>
+            <br>
+            <div class="info-item">
+                <p> <b>Date:</b> 24.12.2021 19:21</p>
+                <p>Vestibulum at suscipit turpis. Praesent vitae pulvinar ipsum. Phasellus dolor velit, convallis non vulputate at, congue eget felis. Curabitur a lacus volutpat, dignissim lectus ac, semper orci. Mauris ut orci at felis molestie finibus. Sed blandit condimentum arcu vel rutrum.</p>
+                <br>
+            </div>
+        </div>
+        <p><b>Location</b></p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16816.78703034726!2d7.921991600000001!3d58.206074349999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46381cb1c719a71b%3A0xe3581e718902da46!2sTorridal%20skole!5e0!3m2!1sen!2sno!4v1637274083898!5m2!1sen!2sno"></iframe>
+
+        <div class="section">
+            <ul class="btn-group">
+                <li id="btn1" class="btn-group__item">
+                    <button class="btn1 btn--basic"><b>Skal</b></button></li>
+                <li class="btn-group__item">
+                    <button id="btn2" class="btn1 btn--basic2"><b>Kommer ikke</b></button></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="modal2" id="modalB">
+    <div class="header">
+        <div class="title">Pizza Kveld</div>
+        <button class="btn modal-btn" data-target="#modalB">x</button>
+    </div>
+    <div class="body">
+        <div class="grid-info">
+            <div><img src="/source/pizza.jpg" alt=""></div>
+            <br>
+            <div class="info-item">
+                <p> <b>Date:</b> 15.12.2021 12:30</p>
+                <p>Vestibulum at suscipit turpis. Praesent vitae pulvinar ipsum. Phasellus dolor velit, convallis non vulputate at, congue eget felis. Curabitur a lacus volutpat, dignissim lectus ac, semper orci. Mauris ut orci at felis molestie finibus. Sed blandit condimentum arcu vel rutrum.</p>
+                <br>
+            </div>
+        </div>
+        <p><b>Location</b></p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d67380.53942037304!2d7.923357358203135!3d58.14618529999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4638025e4efad5e5%3A0x9987a866b080d9c6!2sPeppes%20Pizza%20-%20Kristiansand!5e0!3m2!1sen!2sno!4v1637315807190!5m2!1sen!2sno"></iframe>
+        <div class="section">
+            <ul class="btn-group">
+                <li id="btn3" class="btn-group__item">
+                    <button class="btn1 btn--basic"><b>Skal</b></button></li>
+                <li class="btn-group__item">
+                    <button id="btn4" class="btn1 btn--basic2"><b>Kommer ikke</b></button></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="modal2" id="modalC">
+    <div class="header">
+        <div class="title">Systematicus Jubileumfest!</div>
+        <button class="btn modal-btn" data-target="#modalC">x</button>
+    </div>
+    <div class="body">
+        <div class="grid-info">
+            <div><img src="/source/system.png" alt=""></div>
+            <br>
+            <div class="info-item">
+                <p> <b>Date:</b> 24.12.2021 19:21</p>
+                <p>Vestibulum at suscipit turpis. Praesent vitae pulvinar ipsum. Phasellus dolor velit, convallis non vulputate at, congue eget felis. Curabitur a lacus volutpat, dignissim lectus ac, semper orci. Mauris ut orci at felis molestie finibus. Sed blandit condimentum arcu vel rutrum.</p>
+                <br>
+            </div>
+        </div>
+        <p><b>Location</b></p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5953.134782123845!2d7.999150882405635!3d58.161245733631965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4638025378c67fc7%3A0xfd4fe654e2fbbb6a!2sUniversity%20of%20Agder!5e0!3m2!1sen!2sno!4v1637316358892!5m2!1sen!2sno"></iframe>
+
+        <div class="section">
+            <ul class="btn-group">
+                <li id="btn5" class="btn-group__item">
+                    <button class="btn1 btn--basic"><b>Skal</b></button></li>
+                <li class="btn-group__item">
+                    <button id="btn6" class="btn1 btn--basic2"><b>Kommer ikke</b></button></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="modal2" id="modalD">
+    <div class="header">
+        <div class="title">Bowling Kveld</div>
+        <button class="btn modal-btn" data-target="#modalD">x</button>
+    </div>
+    <div class="body">
+        <div class="grid-info">
+            <div><img src="/source/bowling.jpg" alt=""></div>
+            <br>
+            <div class="info-item">
+                <p> <b>Date:</b> 24.12.2021 19:21</p>
+                <p>Vestibulum at suscipit turpis. Praesent vitae pulvinar ipsum. Phasellus dolor velit, convallis non vulputate at, congue eget felis. Curabitur a lacus volutpat, dignissim lectus ac, semper orci. Mauris ut orci at felis molestie finibus. Sed blandit condimentum arcu vel rutrum.</p>
+                <br>
+            </div>
+        </div>
+        <p><b>Location</b></p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28337.787978570585!2d8.009727642628325!3d58.13643239518202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46380249de5d7cab%3A0x6ca87a5883e94b85!2sLucky%20Bowl%20Kristiansand!5e0!3m2!1sen!2sno!4v1637320296938!5m2!1sen!2sno"></iframe>
+
+        <div class="section">
+            <ul class="btn-group">
+                <li id="btn7" class="btn-group__item">
+                    <button class="btn1 btn--basic"><b>Skal</b></button></li>
+                <li class="btn-group__item">
+                    <button id="btn8" class="btn1 btn--basic2"><b>Kommer ikke</b></button></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="overlay" onclick="menuToggle2();"></div>
+<div class="row">
+    <div class="column" style="background-color:#B0DEE9;">
+        <div id="parent">
+            <h2>Mine Arrangementer</h2>
+            <br>
+        </div>
+    </div>
+    <div class="column" style="background-color:#B0DEE9;">
+        <div id="arrangementer" class="arrangementer">
+            <h2>Arrangementer</h2>
+            <br>
+            <div id="child" class="chip">
+                <img src="/source/vors.jpg" data-target="#modalA" alt="Person" width="96" height="96">
+                <div class="grid-container">
+                    <div class="grid-item"><a class="profile" data-target="#modalA">Vors hos Eivind<br>
+                        <span style="font-size: 12px;">Lorem ipsum dolar sit amet</span></a></div>
+                    <div class="grid-item"><button class="btn btn--action" data-target="#modalA">details</button></div>
+                </div>
+            </div>
+            <div id="child2" class="chip">
+                <img src="/source/pizza.jpg" data-target="#modalB" alt="Person" width="96" height="96">
+                <div class="grid-container">
+                    <div class="grid-item"><a class="profile" data-target="#modalB">Pizza Kveld<br>
+                        <span style="font-size: 12px;">Lorem ipsum dolar sit amet</span></a></div>
+                    <div class="grid-item"><button class="btn btn--action" data-target="#modalB">details</button></div>
+                </div>
+            </div>
+            <div id="child3" class="chip">
+                <img src="/source/system.png" data-target="#modalC" alt="Person" width="96" height="96">
+                <div class="grid-container">
+                    <div class="grid-item"><a class="profile" data-target="#modalC">Systematicus Jubileumfest!<br>
+                        <span style="font-size: 12px;">Lorem ipsum dolar sit amet</span></a></div>
+                    <div class="grid-item"><button class="btn btn--action" data-target="#modalC">details</button></div>
+                </div>
+            </div>
+            <div id="child4" class="chip">
+                <img src="/source/bowling.jpg" data-target="#modalD" alt="Person" width="96" height="96">
+                <div class="grid-container">
+                    <div class="grid-item"><a class="profile" data-target="#modalD">Bowling Kveld<br>
+                        <span style="font-size: 12px;">Lorem ipsum dolar sit amet</span></a></div>
+                    <div class="grid-item"><button class="btn btn--action" data-target="#modalD">details</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column" style="background-color:#B0DEE9;">
+        <h2>Grupper</h2>
+        <br>
+
+        <div class="chip">
+            <img src="/source/david.jpg" data-target="#modalp1" alt="Person" width="96" height="96">
+            <div class="grid-container">
+                <div class="grid-item"><a class="profile" data-target="#modalp1">David Berg <br> <span style="font-size: 12px;">Lorem ipsum dolar sit amet</span></a></div>
+                <div class="grid-item"><button class="btn btn--action"">Chat</button></div>
+            </div>
+        </div>
+
+        <div class="chip">
+            <img src="/source/anders.jpg" data-target="#modalp2" alt="Person" width="96" height="96">
+            <div class="grid-container">
+                <div class="grid-item"><a class="profile" data-target="#modalp2">Anders Tonheim <br> <span style="font-size: 12px;">Lorem ipsum dolar sit amet</span></a></div>
+                <div class="grid-item"><button class="btn btn--action"">Chat</button></div>
+            </div>
+        </div>
+        <div class="chip">
+            <img src="/source/eivind.jpg" data-target="#modalp3" alt="Person" width="96" height="96">
+            <div class="grid-container">
+                <div class="grid-item"><a class="profile" data-target="#modalp3">Eivind Fiske <br> <span style="font-size: 12px;">Lorem ipsum dolar sit amet</span></a></div>
+                <div class="grid-item"><button class="btn btn--action"">Chat</button></div>
+            </div>
+        </div>
+
+        <div class="chip">
+            <img src="/source/stina.jpg" data-target="#modalp4" alt="Person" width="96" height="96">
+            <div class="grid-container">
+                <div class="grid-item"><a class="profile" data-target="#modalp4">Stina Westermann <br> <span style="font-size: 12px;">Lorem ipsum dolar sit amet</span></a></div>
+                <div class="grid-item"><button class="btn btn--action"">Chat</button></div>
+            </div>
+        </div>
+
+        <div class="chip">
+            <img src="/source/tore.png" data-target="#modalp5" alt="Person" width="96" height="96">
+            <div class="grid-container">
+                <div class="grid-item"><a class="profile" data-target="#modalp5">Tore Haarr <br> <span style="font-size: 12px;">Lorem ipsum dolar sit amet</span> </a></div>
+                <div class="grid-item"><button class="btn btn--action"">Chat</button></div>
+            </div>
+        </div>
+        <div class="chip">
+            <img src="/source/rasmus.png" data-target="#modalp6" alt="Person" width="96" height="96">
+            <div class="grid-container">
+                <div class="grid-item"><a class="profile" data-target="#modalp6">Rasmus Nilsen <br> <span style="font-size: 12px;">Lorem ipsum dolar sit amet</span></a></div>
+                <div class="grid-item"><button class="btn btn--action"">Chat</button></div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+<script>
+    const btns = document.querySelectorAll("[data-target]");
+    const close_btns = document.querySelectorAll(".modal-btn");
+    const overlay = document.querySelector("#overlay");
+    const parent = document.getElementById('parent');
+    const arrangementer = document.getElementById('arrangementer');
+    const child = document.getElementById('child');
+    const child2 = document.getElementById('child2');
+    const child3 = document.getElementById('child3');
+    const child4 = document.getElementById('child4');
+    const btn1 = document.getElementById('btn1');
+    const btn2 = document.getElementById('btn2');
+    const btn3 = document.getElementById('btn3');
+    const btn4 = document.getElementById('btn4');
+    const btn5 = document.getElementById('btn5');
+    const btn6 = document.getElementById('btn6');
+    const btn7 = document.getElementById('btn7');
+    const btn8 = document.getElementById('btn8');
+
+    function menuToggle(){
+        const toggleMenu = document.querySelector('.menu');
+        toggleMenu.classList.toggle('active');
+        overlay.classList.add('active');
+    }
+    function menuToggle2(){
+        const toggleMenu = document.querySelector('.menu');
+        toggleMenu.classList.remove('active')
+    }
+
+    btn1.addEventListener('click',()=>{
+        parent.appendChild(child);
+    })
+    btn2.addEventListener('click',()=>{
+        arrangementer.append(child);
+    })
+    btn3.addEventListener('click',()=>{
+        parent.appendChild(child2);
+    })
+    btn4.addEventListener('click',()=>{
+        arrangementer.append(child2);
+    })
+    btn5.addEventListener('click',()=>{
+        parent.appendChild(child3);
+    })
+    btn6.addEventListener('click',()=>{
+        arrangementer.append(child3);
+    })
+    btn7.addEventListener('click',()=>{
+        parent.appendChild(child4);
+    })
+    btn8.addEventListener('click',()=>{
+        arrangementer.append(child4);
+    })
+
+    btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelector(btn.dataset.target).classList.add("active");
+            overlay.classList.add('active');
+        })
+    })
+
+    close_btns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelector(btn.dataset.target).classList.remove("active");
+            overlay.classList.remove('active');
+        })
+    })
+    window.onclick = (e) => {
+        if(e.target == overlay){
+            const modals = document.querySelectorAll(".modal");
+            const modal2s = document.querySelectorAll(".modal2");
+            modals.forEach((modal)=> modal.classList.remove ("active"));
+            modal2s.forEach((modal2)=> modal2.classList.remove ("active"));
+            overlay.classList.remove('active');
+        }
+    }
+
+
+</script>
+
+<script src="app.js"></script>
+<script src="form.js"></script>
+</body>
+</html>
+
+
+
