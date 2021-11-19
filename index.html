@@ -64,7 +64,7 @@
         </div>
         <form id="myform" name="myform" action="" method="GET">
             <textarea type="text" name="inputbox" id="formInput" placeholder="Skriv your bio.."></textarea>
-            <button class="fbutton"   id="button">Sent</button>
+            <button class="fbutton"  id="button">Sent</button>
         </form>
     </div>
 </div>
@@ -102,16 +102,30 @@
     </div>
     <div class="body">
         Her kan du sende in fårespørsler om hjelp hvis det er nødvendig
-    </div>
+        <form action="submit"></form>
+        <textarea name="" id="" cols="30" rows="8"></textarea>
+        <button class="fbutton"  id="button" onclick="mySubmit()">Sent</button>
+        </div>
 </div>
 <div class="modal" id="faq">
     <div class="header">
-        <div class="title">Hjelp</div>
+        <div class="title">FAQ</div>
         <button class="btn modal-btn" data-target="#faq">x</button>
     </div>
     <div class="body">
-
-        Her er svar på noen av de spørsmålene vi blir spurt mest
+<ul style="padding-left: 25px;">
+    <li><p>Kan jeg sende meldinger til private persjoner?</p>
+    <p>Nei, akkurat nå kan du kunn sende meldinger i Gruppe chatten</p></li>
+    <br>
+    <li><p>  Kan jeg endre de arrangementene jeg har allerede lagd?</p> <p>Ja, hvis du går til oversikt og klikker på ditt arrangement,
+        så får du tilgang til å endre eller muligens slette ditt arrangement</p></li>
+    <br>
+    <li><p>Hvordan kan jeg velge et profil bilde?</p><p> Hvis du går inn på rediger profil, så kan du ta bilder av deg selv eller
+        legge inn fra ditt album</p></li>
+    <br>
+    <li><p>Hvordan vet jeg om tidspunktet på et arrangement endres?</p><p>Hvis du sjekker varsler, så vil du få en beskjed hver gang et arrangement
+        du har sagt ja til å dra på blir endret.</p></li>
+</ul>
     </div>
 </div>
 <div class="modal" id="modalp1">
@@ -120,7 +134,7 @@
         <button class="btn modal-btn" data-target="#modalp1">x</button>
     </div>
     <div class="body">
-        Her er svar på noen av de spørsmålene vi blir spurt mest
+        Donec malesuada imperdiet augue, at viverra leo volutpat sed. Vestibulum quis quam aliquet, placerat sem eu, sollicitudin urna. Proin posuere varius commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque imperdiet rutrum orci. In libero quam, gravida et mollis ut, porttitor vitae ipsum.
     </div>
 </div>
 <div class="modal" id="modalp2">
@@ -129,7 +143,7 @@
         <button class="btn modal-btn" data-target="#modalp2">x</button>
     </div>
     <div class="body">
-        Her er svar på noen av de spørsmålene vi blir spurt mest
+        Sed convallis maximus elit sed eleifend. Quisque ut fringilla ex, tristique auctor nisl. Quisque semper, diam id blandit fermentum, ligula libero sagittis lectus, quis ullamcorper urna risus a nisi. Donec quis pellentesque enim, vel vestibulum enim. Nullam nec tellus mauris. Pellentesque pharetra feugiat interdum.
     </div>
 </div>
 <div class="modal" id="modalp3">
@@ -138,7 +152,7 @@
         <button class="btn modal-btn" data-target="#modalp3">x</button>
     </div>
     <div class="body">
-        Her er svar på noen av de spørsmålene vi blir spurt mest
+        Maecenas tempor libero risus, sed convallis risus iaculis ac. Mauris blandit ornare libero et facilisis. Fusce tincidunt elit eget neque consectetur, eget molestie ex mollis. Vivamus a porttitor neque. Morbi blandit ut dolor ac egestas. Duis vestibulum suscipit arcu sed rhoncus. Vivamus aliquet tortor quis elit auctor malesuada.
     </div>
 </div>
 <div class="modal" id="modalp4">
@@ -147,7 +161,7 @@
         <button class="btn modal-btn" data-target="#modalp4">x</button>
     </div>
     <div class="body">
-        Her er svar på noen av de spørsmålene vi blir spurt mest
+        Maecenas gravida metus nec justo bibendum, in viverra nulla interdum. Vivamus pellentesque gravida viverra. Fusce faucibus, felis ut dapibus sodales, velit dolor auctor tellus, et varius tellus diam at metus. Duis finibus lorem commodo pulvinar laoreet.
     </div>
 </div>
 <div class="modal" id="modalp5">
@@ -156,7 +170,7 @@
         <button class="btn modal-btn" data-target="#modalp5">x</button>
     </div>
     <div class="body">
-        Her er svar på noen av de spørsmålene vi blir spurt mest
+        Duis orci mi, imperdiet vitae arcu feugiat, laoreet congue mauris. Proin nec lorem pellentesque, vehicula neque fringilla, porta sem. Donec quis eros bibendum, ornare eros et, rhoncus nisi.
     </div>
 </div>
 <div class="modal" id="modalp6">
@@ -165,7 +179,7 @@
         <button class="btn modal-btn" data-target="#modalp6">x</button>
     </div>
     <div class="body">
-        Her er svar på noen av de spørsmålene vi blir spurt mest
+        Duis malesuada congue lacus quis suscipit. Cras eget ipsum et lorem accumsan gravida. Maecenas sed nibh sit amet leo dictum pulvinar. Maecenas fermentum a neque eu sollicitudin. Nullam ultricies eros eu lobortis consequat.
     </div>
 </div>
 <div class="modal" id="modal7">
@@ -174,7 +188,7 @@
         <button class="btn modal-btn" data-target="#modal7">x</button>
     </div>
     <div class="body">
-        Her skriver du in id og nøkkel for å få admin tilgang
+        Aenean a tellus lorem. Proin semper diam ut dui ultrices viverra. Suspendisse nec justo justo. Integer est enim, porta eu pharetra id, efficitur eget sapien
     </div>
 </div>
 <!--Arrangement Modals-->
@@ -471,7 +485,9 @@
         }
     }
 
-
+    function mySubmit() {
+        alert("Takk for at du kontakter oss, vi vil kontakte deg så snart som mulig.");
+    }
 </script>
 
 <script src="app.js"></script>
