@@ -26,7 +26,7 @@
             <li><img src="/source/settings.png"><a class="btn" data-target="#chatset">Chat Instilinger</a></li>
             <li><img src="/source/question.png"><a class="btn" data-target="#help">Help</a></li>
             <li><img src="/source/question.png"><a class="btn" data-target="#faq">FAQ</a></li>
-            <li><img src="/source/log-out.png"><a class="btn"  href="#">Logout</a></li>
+            <li><img src="/source/log-out.png"><a class="btn"  href="Login.html">Logout</a></li>
         </ul>
     </div>
 </div>
@@ -263,12 +263,12 @@
 </div>
 <div class="modal2" id="modalD">
     <div class="header">
-        <div class="title">Vors hos Eivind</div>
-        <button class="btn modal-btn" data-target="#modalA">x</button>
+        <div class="title">Bowling Kveld</div>
+        <button class="btn modal-btn" data-target="#modalD">x</button>
     </div>
     <div class="body">
         <div class="grid-info">
-            <div><img src="/source/vors.jpg" alt=""></div>
+            <div><img src="/source/bowling.jpg" alt=""></div>
             <br>
             <div class="info-item">
                 <p> <b>Date:</b> 24.12.2021 19:21</p>
@@ -277,7 +277,7 @@
             </div>
         </div>
         <p><b>Location</b></p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16816.78703034726!2d7.921991600000001!3d58.206074349999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46381cb1c719a71b%3A0xe3581e718902da46!2sTorridal%20skole!5e0!3m2!1sen!2sno!4v1637274083898!5m2!1sen!2sno"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28337.787978570585!2d8.009727642628325!3d58.13643239518202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46380249de5d7cab%3A0x6ca87a5883e94b85!2sLucky%20Bowl%20Kristiansand!5e0!3m2!1sen!2sno!4v1637320296938!5m2!1sen!2sno"></iframe>
 
         <div class="section">
             <ul class="btn-group">
@@ -327,9 +327,9 @@
                 </div>
             </div>
             <div id="child4" class="chip">
-                <img src="/source/pizza.jpg" data-target="#modalD" alt="Person" width="96" height="96">
+                <img src="/source/bowling.jpg" data-target="#modalD" alt="Person" width="96" height="96">
                 <div class="grid-container">
-                    <div class="grid-item"><a class="profile" data-target="#modalD">Pizza Kveld<br>
+                    <div class="grid-item"><a class="profile" data-target="#modalD">Bowling Kveld<br>
                         <span style="font-size: 12px;">Lorem ipsum dolar sit amet</span></a></div>
                     <div class="grid-item"><button class="btn btn--action" data-target="#modalD">details</button></div>
                 </div>
@@ -403,12 +403,15 @@
     const child = document.getElementById('child');
     const child2 = document.getElementById('child2');
     const child3 = document.getElementById('child3');
+    const child4 = document.getElementById('child4');
     const btn1 = document.getElementById('btn1');
     const btn2 = document.getElementById('btn2');
     const btn3 = document.getElementById('btn3');
     const btn4 = document.getElementById('btn4');
     const btn5 = document.getElementById('btn5');
     const btn6 = document.getElementById('btn6');
+    const btn7 = document.getElementById('btn7');
+    const btn8 = document.getElementById('btn8');
 
     function menuToggle(){
     const toggleMenu = document.querySelector('.menu');
@@ -437,6 +440,12 @@
     })
     btn6.addEventListener('click',()=>{
         arrangementer.append(child3);
+    })
+    btn7.addEventListener('click',()=>{
+        parent.appendChild(child4);
+    })
+    btn8.addEventListener('click',()=>{
+        arrangementer.append(child4);
     })
 
     btns.forEach(btn => {
