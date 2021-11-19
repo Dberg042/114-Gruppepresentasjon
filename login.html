@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validated Login Form</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background: url(source/fadder.jpg) no-repeat;
+            background-size: cover;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            font-family: sans-serif;
+        }
+        .container{
+            position: relative;
+            margin-top: 100px;
+            width: 450px;
+            height: auto;
+            background: #dedede;
+            border-radius: 5px;
+        }
+        .label{
+            font-family: "Montserrat";
+            text-align: center;
+            padding-top: 30px;
+            font-size: 25px;
+            font-weight: bold;
+            color: #000000;
+        }
+        .login_form{
+            padding: 20px 40px;
+        }
+        p {
+
+            text-align: center;
+        }
+        .login_form .font{
+            font-size: 18px;
+            color: #130f40;
+            margin: 5px 0;
+        }
+        .login_form input{
+            height: 40px;
+            width: 350px;
+            padding: 0 5px;
+            font-size: 18px;
+            outline: none;
+            border: 1px solid silver;
+        }
+        .login_form .font2{
+            margin-top: 30px;
+        }
+        .login_form button{
+            margin: 45px 0 30px 0;
+            height: 45px;
+            width: 365px;
+            font-size: 20px;
+            color: white;
+            outline: none;
+            cursor: pointer;
+            font-weight: bold;
+            background: #b30101;
+            border-radius: 1px;
+            border: 1px solid #b30101;
+            transition: .5s;
+        }
+        .login_form button:hover{
+            background: #b4003e;
+        }
+        .login_form #email_error,
+        .login_form #pass_error{
+            margin-top: 5px;
+            width: 345px;
+            font-size: 18px;
+            color: #C62828;
+            background: rgba(255,0,0,0.1);
+            text-align: center;
+            padding: 5px 8px;
+            border-radius: 3px;
+            border: 1px solid #EF9A9A;
+            display: none;
+        }
+        .line{
+            width: 450px;
+            height: 5px;
+            border-bottom: 1px solid black;
+            position: absolute;
+        }
+        .line2{
+            width: 450px;
+            height: 15px;
+            border-bottom: 1px solid black;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <h1 class="label">Log in with Feide</h1>
+    <br>
+    <p>You need to log in via Feide to access Fadder-UiA.</p>
+    <div class="line"></div>
+    <p style="padding-top: 20px;">Your affiliation University of Agder </p>
+
+    <div class="line2"></div>
+    <form class="login_form" action="home.html" method="post" name="form" onsubmit="return validated()">
+        <div class="font">Username</div>
+        <input autocomplete="off" type="text" name="email">
+        <div id="email_error">Please fill up your Username</div>
+        <div class="font font2">Password</div>
+        <input type="password" name="password">
+        <div id="pass_error">Please fill up your Password</div>
+        <button type="submit">Login</button>
+    </form>
+</div>
+<script>
+    var email = document.forms['form']['email'];
+    var password = document.forms['form']['password'];
+
+    var email_error = document.getElementById('email_error');
+    var pass_error = document.getElementById('pass_error');
+
+    email.addEventListener('textInput', email_Verify);
+    password.addEventListener('textInput', pass_Verify);
+
+    function validated(){
+        if (email.value.length < 5) {
+            email.style.border = "1px solid red";
+            email_error.style.display = "block";
+            email.focus();
+            return false;
+        }
+        if (password.value.length < 6) {
+            password.style.border = "1px solid red";
+            pass_error.style.display = "block";
+            password.focus();
+            return false;
+        }
+
+    }
+    function email_Verify(){
+        if (email.value.length >= 5) {
+            email.style.border = "1px solid silver";
+            email_error.style.display = "none";
+            return true;
+        }
+    }
+    function pass_Verify(){
+        if (password.value.length >= 5) {
+            password.style.border = "1px solid silver";
+            pass_error.style.display = "none";
+            return true;
+        }
+    }
+</script>
+</body>
+</html>
