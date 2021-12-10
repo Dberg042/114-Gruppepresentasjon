@@ -4,12 +4,13 @@ const img2 = document.querySelector('#photo2');
 const file = document.querySelector('#file');
 const uploadBtn = document.querySelector('#uploadBtn');
 
-
+/*hvis brukeren hover på img div*/
 
 imgDiv.addEventListener('mouseenter', function(){
     uploadBtn.style.display = "block";
 });
 
+// hvis vi hover ut fra img div
 
 imgDiv.addEventListener('mouseleave', function(){
     uploadBtn.style.display = "none";
@@ -17,13 +18,15 @@ imgDiv.addEventListener('mouseleave', function(){
 
 
 
+//når vi velger et bilde å laste opp
+
 file.addEventListener('change', function(){
-    //this refers to file
+
     const choosedFile = this.files[0];
 
     if (choosedFile) {
 
-        const reader = new FileReader(); //FileReader is a predefined function of JS
+        const reader = new FileReader();
 
         reader.addEventListener('load', function(){
             img.setAttribute('src', reader.result);
@@ -32,6 +35,7 @@ file.addEventListener('change', function(){
 
         reader.readAsDataURL(choosedFile);
 
-     }
+
+    }
 });
 
