@@ -1,3 +1,5 @@
+/*js kode for redigere bio*/
+
 const output = document.getElementById("upDateText");
 const output2 = document.getElementById("upDateText2");
 const formInput = document.getElementById('formInput');
