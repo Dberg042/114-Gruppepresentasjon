@@ -15,6 +15,7 @@
             display: flex;
             font-family: sans-serif;
         }
+        /*Feide login container*/
         .container{
             position: relative;
             margin-top: 100px;
@@ -23,6 +24,7 @@
             background: #dedede;
             border-radius: 5px;
         }
+        /*Feide login label og input style*/
         .label{
             font-family: "Montserrat";
             text-align: center;
@@ -68,10 +70,12 @@
             border: 1px solid #b30101;
             transition: .5s;
         }
+        /*Login button endrer farge i hover mod*/
         .login_form button:hover{
             background: #b4003e;
         }
-        .login_form #email_error,
+        /*Login form i error mod*/
+        .login_form #user_error,
         .login_form #pass_error{
             margin-top: 5px;
             width: 345px;
@@ -84,6 +88,7 @@
             border: 1px solid #EF9A9A;
             display: none;
         }
+        /*linje over og nedenfor "your affiliation Univerisity of agder"*/
         .line{
             width: 450px;
             height: 5px;
@@ -110,29 +115,31 @@
     <div class="line2"></div>
     <form class="login_form" action="index.html" method="post" name="form" onsubmit="return validated()">
         <div class="font">Username</div>
-        <input autocomplete="off" type="text" name="email">
-        <div id="email_error">Please fill up your Username</div>
+        <input autocomplete="off" type="text" name="user">
+        <div id="user_error">Please fill up your Username</div>
         <div class="font font2">Password</div>
         <input type="password" name="password">
         <div id="pass_error">Please fill up your Password</div>
         <button type="submit">Login</button>
     </form>
 </div>
-<script>
-    var email = document.forms['form']['email'];
-    var password = document.forms['form']['password'];
 
-    var email_error = document.getElementById('email_error');
+<script>
+
+    var user = document.forms['form']['user'];
+    var password = document.forms['form']['password'];
+   /* Vis error melding,hvis bruker skriver feil passord eller brukernavn */
+    var user_error = document.getElementById('user_error');
     var pass_error = document.getElementById('pass_error');
 
-    email.addEventListener('textInput', email_Verify);
+    user.addEventListener('textInput', user_Verify);
     password.addEventListener('textInput', pass_Verify);
-
+ /*bruker og passord validasjon function, user bør ha minst 5 character og passord 6 character */
     function validated(){
-        if (email.value.length < 5) {
-            email.style.border = "1px solid red";
-            email_error.style.display = "block";
-            email.focus();
+        if (user.value.length < 5) {
+            user.style.border = "1px solid red";
+            user_error.style.display = "block";
+            user.focus();
             return false;
         }
         if (password.value.length < 6) {
@@ -143,10 +150,10 @@
         }
 
     }
-    function email_Verify(){
-        if (email.value.length >= 5) {
-            email.style.border = "1px solid silver";
-            email_error.style.display = "none";
+    function user_Verify(){
+        if (user.value.length >= 5) {
+            user.style.border = "1px solid silver";
+            user_error.style.display = "none";
             return true;
         }
     }
