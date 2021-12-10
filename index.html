@@ -14,23 +14,25 @@
     <div class="action">
         <div class="profile" onclick="menuToggle();">
 
-            <img src="source/31.jpg" id="photo2">
+            <img src="source/31.jpg" id="photo2" alt="profil foto">
+            <!--menu kommer opp, når man trykkes på profil bilde-->
         </div>
         <div class="menu" onclick="menuToggle2();">
             <h3>Ola Nordmann <br> <span>Fadder</span></h3>
             <ul>
-                <li><img src="source/user.png"><a class="btn" data-target="#profile">Min Profile</a></li>
-                <li><img src="source/edit.png"><a class="btn" data-target="#editp" >Rediger Profile</a></li>
-                <li><img src="source/settings.png"><a class="btn" data-target="#lan">Språk</a></li>
-                <li><img src="source/envelope.png"><a class="btn" data-target="#notification">Varslinger</a></li>
-                <li><img src="source/settings.png"><a class="btn" data-target="#chatset">Chat Instilinger</a></li>
-                <li><img src="source/question.png"><a class="btn" data-target="#help">Help</a></li>
-                <li><img src="source/question.png"><a class="btn" data-target="#faq">FAQ</a></li>
-                <li><img src="source/log-out.png"><a class="btn"  href="login.html">Logout</a></li>
+                <li><img src="source/user.png" alt="min profile icon"><a class="btn" data-target="#profile">Min Profile</a></li>
+                <li><img src="source/edit.png" alt="rediger profile icon"><a class="btn" data-target="#editp" >Rediger Profile</a></li>
+                <li><img src="source/settings.png" alt="redigere språk icon"><a class="btn" data-target="#lan">Språk</a></li>
+                <li><img src="source/envelope.png" alt="varslinger icon"><a class="btn" data-target="#notification">Varslinger</a></li>
+                <li><img src="source/settings.png" alt="chat instilinger icon"><a class="btn" data-target="#chatset">Chat Instilinger</a></li>
+                <li><img src="source/question.png" alt="help icon"><a class="btn" data-target="#help">Help</a></li>
+                <li><img src="source/question.png" alt="faq icon"><a class="btn" data-target="#faq">FAQ</a></li>
+                <li><img src="source/log-out.png" alt="logout icon"><a class="btn"  href="login.html">Logout</a></li>
             </ul>
         </div>
     </div>
 </div>
+ <!--hvis lenker ovenfor trykkes, åpnes et eget lenkevindu for hver-->
 <div class="modal" id="profile">
     <div class="header">
         <div class="title">Min profil</div>
@@ -42,10 +44,12 @@
             <span>Fadder</span>
             <br>
             <h5>Bio</h5></div>
+        <!--man kan endre profil tekst ved å bruke rediger profil menu-->
         <p id="upDateText">Vestibulum at suscipit turpis. Praesent vitae pulvinar ipsum. Phasellus dolor velit, convallis non vulputate at, congue eget felis. Curabitur a lacus volutpat, dignissim lectus ac, semper orci. Mauris ut orci at felis molestie finibus. Sed blandit condimentum arcu vel rutrum.
         </p>
     </div>
 </div>
+<!--profil bilde og bio kan endres ved å bruke rediger din profil menu-->
 <div class="modal" id="editp">
     <div class="header">
         <div class="title">Rediger Din Profile</div>
@@ -95,13 +99,14 @@
         Her kan du gjøre ting som å endre på størrelsen på skrift osv
     </div>
 </div>
+<!--her kan sendes spørsmål eller sende førespørsler -->
 <div class="modal" id="help">
     <div class="header">
         <div class="title">Varslinger</div>
         <button class="btn modal-btn" data-target="#help">x</button>
     </div>
     <div class="body">
-        Her kan du sende in fårespørsler om hjelp hvis det er nødvendig
+        Her kan du sende førespørsler om hjelp hvis det er nødvendig
         <form action="submit"></form>
         <textarea name="" id="" cols="30" rows="8"></textarea>
         <button class="fbutton"  id="button" onclick="mySubmit()">Sent</button>
@@ -128,6 +133,7 @@
 </ul>
     </div>
 </div>
+<!-- her ser vi detaljene til gruppemedlemmene, et vindu kommer opp for hver person-->
 <div class="modal" id="modalp1">
     <div class="header">
         <div class="title">David Berg</div>
@@ -191,7 +197,7 @@
         Aenean a tellus lorem. Proin semper diam ut dui ultrices viverra. Suspendisse nec justo justo. Integer est enim, porta eu pharetra id, efficitur eget sapien
     </div>
 </div>
-<!--Arrangement Modals-->
+<!--Arrangement Modals, her ses arrangements detaljer; navn, bilde, lokasjon og dato -->
 <div class="modal2" id="modalA">
     <div class="header">
         <div class="title">Vors hos Eivind</div>
@@ -199,7 +205,7 @@
     </div>
     <div class="body">
         <div class="grid-info">
-            <div><img src="source/vors.jpg" alt=""></div>
+            <div><img src="source/vors.jpg" alt="vors bilde"></div>
             <br>
             <div class="info-item">
                 <p> <b>Date:</b> 24.12.2021 19:21</p>
@@ -227,7 +233,7 @@
     </div>
     <div class="body">
         <div class="grid-info">
-            <div><img src="source/pizza.jpg" alt=""></div>
+            <div><img src="source/pizza.jpg" alt="pizza bilde"></div>
             <br>
             <div class="info-item">
                 <p> <b>Date:</b> 15.12.2021 12:30</p>
@@ -254,7 +260,7 @@
     </div>
     <div class="body">
         <div class="grid-info">
-            <div><img src="source/system.png" alt=""></div>
+            <div><img src="source/system.png" alt="systematicus bilde"></div>
             <br>
             <div class="info-item">
                 <p> <b>Date:</b> 24.12.2021 19:21</p>
@@ -282,7 +288,7 @@
     </div>
     <div class="body">
         <div class="grid-info">
-            <div><img src="source/bowling.jpg" alt=""></div>
+            <div><img src="source/bowling.jpg" alt="bowling bilde"></div>
             <br>
             <div class="info-item">
                 <p> <b>Date:</b> 24.12.2021 19:21</p>
@@ -317,7 +323,7 @@
             <h2>Arrangementer</h2>
             <br>
             <div id="child" class="chip">
-                <img src="source/vors.jpg" data-target="#modalA" alt="Person" width="96" height="96">
+                <img src="source/vors.jpg" data-target="#modalA" alt="vors thumbnail" width="96" height="96">
                 <div class="grid-container">
                     <div class="grid-item"><a class="profile" data-target="#modalA">Vors hos Eivind<br>
                         <span style="font-size: 12px;">Lorem ipsum dolar sit amet</span></a></div>
@@ -325,7 +331,7 @@
                 </div>
             </div>
             <div id="child2" class="chip">
-                <img src="source/pizza.jpg" data-target="#modalB" alt="Person" width="96" height="96">
+                <img src="source/pizza.jpg" data-target="#modalB" alt="pizza thumbnail" width="96" height="96">
                 <div class="grid-container">
                     <div class="grid-item"><a class="profile" data-target="#modalB">Pizza Kveld<br>
                         <span style="font-size: 12px;">Lorem ipsum dolar sit amet</span></a></div>
@@ -333,7 +339,7 @@
                 </div>
             </div>
             <div id="child3" class="chip">
-                <img src="source/system.png" data-target="#modalC" alt="Person" width="96" height="96">
+                <img src="source/system.png" data-target="#modalC" alt="systematicus thumbnail" width="96" height="96">
                 <div class="grid-container">
                     <div class="grid-item"><a class="profile" data-target="#modalC">Systematicus Jubileumfest!<br>
                         <span style="font-size: 12px;">Lorem ipsum dolar sit amet</span></a></div>
@@ -341,7 +347,7 @@
                 </div>
             </div>
             <div id="child4" class="chip">
-                <img src="source/bowling.jpg" data-target="#modalD" alt="Person" width="96" height="96">
+                <img src="source/bowling.jpg" data-target="#modalD" alt="bowling thumbnail" width="96" height="96">
                 <div class="grid-container">
                     <div class="grid-item"><a class="profile" data-target="#modalD">Bowling Kveld<br>
                         <span style="font-size: 12px;">Lorem ipsum dolar sit amet</span></a></div>
@@ -355,7 +361,7 @@
         <br>
 
         <div class="chip">
-            <img src="source/david.jpg" data-target="#modalp1" alt="Person" width="96" height="96">
+            <img src="source/david.jpg" data-target="#modalp1" alt="Person 1" width="96" height="96">
             <div class="grid-container">
                 <div class="grid-item"><a class="profile" data-target="#modalp1">David Berg <br> <span style="font-size: 12px;">Lorem ipsum dolar sit amet</span></a></div>
                 <div class="grid-item"><button class="btn btn--action"">Chat</button></div>
@@ -363,14 +369,14 @@
         </div>
 
         <div class="chip">
-            <img src="source/anders.jpg" data-target="#modalp2" alt="Person" width="96" height="96">
+            <img src="source/anders.jpg" data-target="#modalp2" alt="Person 2" width="96" height="96">
             <div class="grid-container">
                 <div class="grid-item"><a class="profile" data-target="#modalp2">Anders Tonheim <br> <span style="font-size: 12px;">Lorem ipsum dolar sit amet</span></a></div>
                 <div class="grid-item"><button class="btn btn--action"">Chat</button></div>
             </div>
         </div>
         <div class="chip">
-            <img src="source/eivind.jpg" data-target="#modalp3" alt="Person" width="96" height="96">
+            <img src="source/eivind.jpg" data-target="#modalp3" alt="Person 3" width="96" height="96">
             <div class="grid-container">
                 <div class="grid-item"><a class="profile" data-target="#modalp3">Eivind Fiske <br> <span style="font-size: 12px;">Lorem ipsum dolar sit amet</span></a></div>
                 <div class="grid-item"><button class="btn btn--action"">Chat</button></div>
@@ -378,7 +384,7 @@
         </div>
 
         <div class="chip">
-            <img src="source/stina.jpg" data-target="#modalp4" alt="Person" width="96" height="96">
+            <img src="source/stina.jpg" data-target="#modalp4" alt="Person 4" width="96" height="96">
             <div class="grid-container">
                 <div class="grid-item"><a class="profile" data-target="#modalp4">Stina Westermann <br> <span style="font-size: 12px;">Lorem ipsum dolar sit amet</span></a></div>
                 <div class="grid-item"><button class="btn btn--action"">Chat</button></div>
@@ -386,14 +392,14 @@
         </div>
 
         <div class="chip">
-            <img src="source/tore.png" data-target="#modalp5" alt="Person" width="96" height="96">
+            <img src="source/tore.png" data-target="#modalp5" alt="Person 5" width="96" height="96">
             <div class="grid-container">
                 <div class="grid-item"><a class="profile" data-target="#modalp5">Tore Haarr <br> <span style="font-size: 12px;">Lorem ipsum dolar sit amet</span> </a></div>
                 <div class="grid-item"><button class="btn btn--action"">Chat</button></div>
             </div>
         </div>
         <div class="chip">
-            <img src="source/rasmus.png" data-target="#modalp6" alt="Person" width="96" height="96">
+            <img src="source/rasmus.png" data-target="#modalp6" alt="Person 6" width="96" height="96">
             <div class="grid-container">
                 <div class="grid-item"><a class="profile" data-target="#modalp6">Rasmus Nilsen <br> <span style="font-size: 12px;">Lorem ipsum dolar sit amet</span></a></div>
                 <div class="grid-item"><button class="btn btn--action"">Chat</button></div>
@@ -409,9 +415,12 @@
 
 
 <script>
+    /*Variable for modals*/
     const btns = document.querySelectorAll("[data-target]");
     const close_btns = document.querySelectorAll(".modal-btn");
+    /*variable for gjennomsiktig svart bakgrunn*/
     const overlay = document.querySelector("#overlay");
+    /*variable for arrangementer og mine arrangementer collumn*/
     const parent = document.getElementById('parent');
     const arrangementer = document.getElementById('arrangementer');
     const child = document.getElementById('child');
@@ -426,7 +435,7 @@
     const btn6 = document.getElementById('btn6');
     const btn7 = document.getElementById('btn7');
     const btn8 = document.getElementById('btn8');
-
+/*dropdown meny funksjon*/
     function menuToggle(){
         const toggleMenu = document.querySelector('.menu');
         toggleMenu.classList.toggle('active');
@@ -436,7 +445,7 @@
         const toggleMenu = document.querySelector('.menu');
         toggleMenu.classList.remove('active')
     }
-
+/*btn 1,3,5,7(skal) overforer arrangement til mine arrangement, btn(kommer ikke) 2,4,6,8 overforer arrangement fra mine arrangement til arrangement*/
     btn1.addEventListener('click',()=>{
         parent.appendChild(child);
     })
@@ -461,7 +470,7 @@
     btn8.addEventListener('click',()=>{
         arrangementer.append(child4);
     })
-
+/*funksjon for svart bakgrunn*/
     btns.forEach(btn => {
         btn.addEventListener('click', () => {
             document.querySelector(btn.dataset.target).classList.add("active");
@@ -484,14 +493,14 @@
             overlay.classList.remove('active');
         }
     }
-
+/*hjelp meny allert*/
     function mySubmit() {
         alert("Takk for at du kontakter oss, vi vil kontakte deg så snart som mulig.");
     }
 </script>
 
-<script src="app.js"></script>
-<script src="form.js"></script>
+<script src="changeprofilphoto.js"></script>
+<script src="editbio.js"></script>
 </body>
 </html>
 
