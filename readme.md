@@ -139,3 +139,13 @@ JS
       overlay.classList.add('active');  
     }
 ```
+
+## Dubliserin av kode
+Det finnes ingen dublisering av kode i prosjekt.
+
+## Issues og Commits
+Jeg vil gi eksempel for TODO og issues er den ;
+https://github.com/Dberg042/114-Gruppepresentasjon/issues/13
+Vi diskuterte i møtene hvordan vi kan løse et problem på hovedsiden. Da så vi at problemet kan løses med javascripts appenchild-metode. Vi har lagt dette til i Issues. Så, som et utviklerteam, jobbet vi med disse løsningene og prøvde forskjellige modeller og alternativer. We pulled or pushed when we uppdated models. Siden vi vanligvis jobber med koden i gruppeundervisninger, glemte vi å notere på github issues, dette skjønte vi like ved slutten av prosjektet. Vi lukket problemet ved å legge til funksjonen til modellen vi bygde.
+
+Vi kan følge opp endringer ved å lese kommetarer i "commits"  for hver fil. Vi kan sammenligner utvikling av prosjekt. Vi skulle skrive mer detaljert kommetarer i "commits" og commits når vi gjør en viktig endring i prosjekt ved neste anledning 
