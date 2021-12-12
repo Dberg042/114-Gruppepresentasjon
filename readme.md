@@ -75,7 +75,7 @@ Vi brukte kommentar for css selector for å vise selektoren sin funkjon.
       display: none;  
     }  
     textarea {  
-        width: 100%;  
+      width: 100%;  
       height: 150px;  
       padding: 12px 20px;  
       box-sizing: border-box;  
@@ -86,7 +86,7 @@ Vi brukte kommentar for css selector for å vise selektoren sin funkjon.
       resize: none;  
     }  
     .body .fbutton {  
-        width: 100%;  
+      width: 100%;  
       height: 40px;  
       background: #00cde0;  
       color: white;  
@@ -113,29 +113,29 @@ Vi prøvde å kommentere js koder for å forklare hva selve koden gjør.
 ## Formattering av koden 
 Vi brukte god og forstårlig formatering for koden;
 HTML
-
+```html
     <div class="column" style="background-color:#B0DEE9;">  
      <div id="parent">  
 	     <h2>Mine Arrangementer</h2>  
 	     <br> 
      </div>
     </div>
-
+```
 
 CSS
-
+```css
     .modal-btn {  
       background-color: transparent;  
       border: none;  
       font-size: 1.5rem;  
     }
-
+```
 
 JS
-
+```javascript
     function menuToggle(){  
       const toggleMenu = document.querySelector('.menu');  
       toggleMenu.classList.toggle('active');  
       overlay.classList.add('active');  
     }
-
+```
