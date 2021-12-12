@@ -18,7 +18,7 @@ Vi brukte kommentarer for noen kode grupper der koden ikke er selvforklarende, f
 ## HTML
 Vi brukte kommentar for noen HTML elementer for å gjøre enklere å forstå, hva den kode gjør i applikasjon.
 Her ser vi help meny koden nedenfor. 
-
+```html
     <!--her kan sendes spørsmål eller sende førespørsler -->  
     <div class="modal" id="help">  
      <div class="header">  
@@ -35,7 +35,7 @@ Her ser vi help meny koden nedenfor.
  
 ## CCS
 Vi brukte kommentar for css selector for å vise selektoren sin funkjon.
-
+```css
     /*rediger profil bilde, input og knapp style*/  
     .profile-pic-div{  
       height: 150px;  
@@ -96,7 +96,7 @@ Vi brukte kommentar for css selector for å vise selektoren sin funkjon.
 
 ## JS
 Vi prøvde å kommentere js koder for å forklare hva selve koden gjør.
-
+```javascript
     //hvis brukeren hover på img div  
       
     imgDiv.addEventListener('mouseenter', function(){  
