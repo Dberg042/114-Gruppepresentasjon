@@ -1,9 +1,9 @@
 # UIA Fadder -IS114
 
-Fadderuka UIA er en app hvor førsteårs studenter på UIA kan finne informasjon om
-arrangementer under fadderuka og faddere/linjeforeninger har muligheten til å opprette
-offentlige arrangementer. Appens formål er å samle studenter på en oversiktlig måte via
-sosiale aktiviteter under fadderuka.  `//tatt fra raport`
+Fadder-uka UIA er vår gruppe sitt forsøk på å lage en app som kan samle folk etter pandemien. Poenget med appen er å samle all informasjon når det kommer til arrangementer og sammenkomster i løpet av fadder uka ved UIA. Med appen vår, vil studenter ha mulighet til å logge seg inn ved bruken av feide, og bli vist alle de kommende arrangementer som blir enten arrangert av skolen og linjeforeningene, eller privatpersoner i faddergruppa. 
+
+I IS-104 og IS.114 har vi fått samme oppgave om å lage en app/nettside som skal samle folk, men vi har brukt relativt forskjellige metoder på å designe appene. Vi startet med IS-104, hvor vi brukte et ux design tool som heter justinmind for å designe hvordan appen skal se ut og fungere. I IS-114 skulle vi lage en web basert versjon av applikasjonen, og vi har derfor dratt mye inspirasjon fra den originale IS-104 appen for å prøve å få til et slags samhold mellom de to produktene og en relativ lik opplevelse mellom de to.
+
 
 
 # Kode Språk Brukt
