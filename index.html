@@ -102,7 +102,7 @@
 <!--her kan sendes spørsmål eller sende førespørsler -->
 <div class="modal" id="help">
     <div class="header">
-        <div class="title">Varslinger</div>
+        <div class="title">Hjelp</div>
         <button class="btn modal-btn" data-target="#help">x</button>
     </div>
     <div class="body">
@@ -470,6 +470,7 @@
     btn8.addEventListener('click',()=>{
         arrangementer.append(child4);
     })
+    
 /*funksjon for svart bakgrunn*/
     btns.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -493,14 +494,78 @@
             overlay.classList.remove('active');
         }
     }
-/*hjelp meny allert*/
+    
+    //hjelp meny allert
+    
     function mySubmit() {
         alert("Takk for at du kontakter oss, vi vil kontakte deg så snart som mulig.");
     }
+    
+    //js kode for redigere bio
+
+    const output = document.getElementById("upDateText");
+    const output2 = document.getElementById("upDateText2");
+    const formInput = document.getElementById('formInput');
+    const form = document.getElementById('myform');
+    class Message {
+        constructor(name) {
+            this.name = name;
+        }
+        say() {
+            return `${this.name}`;
+        }
+    }
+    form.addEventListener('submit', function(event) {
+        const name = formInput.value;
+        const message = new Message(name);
+        const sentence = message.say();
+        output.textContent = sentence;
+        output2.textContent = sentence;
+        event.preventDefault();
+    });
+    
+    //bytte profil bilde js kod
+    const imgDiv = document.querySelector('.profile-pic-div');
+    const img = document.querySelector('#photo');
+    const img2 = document.querySelector('#photo2');
+    const file = document.querySelector('#file');
+    const uploadBtn = document.querySelector('#uploadBtn');
+
+    //hvis brukeren hover på img div
+
+    imgDiv.addEventListener('mouseenter', function(){
+        uploadBtn.style.display = "block";
+    });
+
+    // hvis vi hover ut fra img div
+
+    imgDiv.addEventListener('mouseleave', function(){
+        uploadBtn.style.display = "none";
+    });
+
+    //når vi velger et bilde å laste opp
+
+    file.addEventListener('change', function(){
+
+        const choosedFile = this.files[0];
+
+        if (choosedFile) {
+
+            const reader = new FileReader();
+
+            reader.addEventListener('load', function(){
+                img.setAttribute('src', reader.result);
+                img2.setAttribute('src', reader.result);
+            });
+
+            reader.readAsDataURL(choosedFile);
+        }
+    });
+
 </script>
 
-<script src="changeprofilphoto.js"></script>
-<script src="editbio.js"></script>
+//<script src="changeprofilphoto.js"></script>
+//<script src="editbio.js"></script>
 </body>
 </html>
 
