@@ -32,7 +32,7 @@ Her ser vi help meny koden nedenfor.
 	     <button class="fbutton" id="button" onclick="mySubmit()">Sent</button>  
 	  </div>
      </div> 
- 
+```
 ## CCS
 Vi brukte kommentar for css selector for å vise selektoren sin funkjon.
 ```css
@@ -93,7 +93,7 @@ Vi brukte kommentar for css selector for å vise selektoren sin funkjon.
       border: 2px solid #ccc;  
       border-radius: 4px;  
     }
-
+```
 ## JS
 Vi prøvde å kommentere js koder for å forklare hva selve koden gjør.
 ```javascript
@@ -108,7 +108,7 @@ Vi prøvde å kommentere js koder for å forklare hva selve koden gjør.
     imgDiv.addEventListener('mouseleave', function(){  
         uploadBtn.style.display = "none";  
     });
-
+```
 
 ## Formattering av koden 
 Vi brukte god og forstårlig formatering for koden;
