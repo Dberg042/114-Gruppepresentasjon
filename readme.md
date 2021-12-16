@@ -10,7 +10,7 @@ I IS-104 og IS.114 har vi fått samme oppgave om å lage en app/nettside som ska
 Først og fremst for å lykkes med prosjekt, lærte vi Githup bruk som å lage “commits” og “pushe” kode til en branch. Ved bruk av Github skulle vi samarbeide med å planlegge koden til en slik nettside, i tillegg til å lære oss plattformen. Etterpå blir vi mer kjent med HTML og CCS i visitkort oppgaven. Gjennom "how vi roll oppgave" først vi begynnte kode javascript. Vi utviklet mer våre javascript kode ferdigheter med siste slutte oppgave. Vi lært disse gjennom forelesninger, og flere kilder slik at codeacademy, codepen, stackoverflow, linkedinlearning, W3Schools og Mozilla developer osv. Vi har tatt kurser men kanskje viktigste, vi lærte mer ved å prøving og feiling. Endelig finner vi løsning vi trenger, kanskje vi kunne bruke mer tid for å prøving og feiling hvis vi hadde gjort det på nytt nå.
 
 ## Kvalitet i Kode
-Vi har gitt forstårlig nav for filer, classer og eksterne resurser. 
+Vi har gitt forstårlig navn for filer, classer og eksterne resurser. 
 Vi har 2 main html file, en heter login.html som representer login page og andre index.html som er main page file. Vi han en stylesheet og 2 javascript filer. JS filer har god navgiving og det er helt klar å forstå kode funskjon. 
  
 Vi brukte kommentarer for noen kode grupper der koden ikke er selvforklarende, forkesempel
